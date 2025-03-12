@@ -5,5 +5,5 @@ use App\Repositories\Interfaces\RepositoryInterface;
 
 interface CategoryRepositoryInterface extends RepositoryInterface
 {
-
+    public function getAllWithTemplates();
 }

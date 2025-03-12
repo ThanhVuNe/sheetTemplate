@@ -11,7 +11,11 @@ class TemplateService
     ) {
     }
 
-    public function getTemplatesWithCategory() {
-        return $this->templateRepository->getAllWithCategory();
+    public function getTemplatesWithCategory($categoryId = null) {
+        return $this->templateRepository->getAllWithCategory($categoryId);
+    }
+
+    public function getTemplate($id) {
+        return $this->templateRepository->find($id);
     }
 }

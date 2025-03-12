@@ -11,4 +11,8 @@ class CategoryRepository extends Repository implements CategoryRepositoryInterfa
     {
         return Category::class;
     }
+
+    public function getAllWithTemplates() {
+        return $this->model->with('templates')->get();
+    }
 }
